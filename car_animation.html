@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+ 
+        #box {
+            background-image: url("sky.jpg");
+            background-repeat: repeat-x;
+        }
+        
+        #wheel1{
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            animation: wheel1-move 5s linear infinite;
+            z-index: 1;
+        }
+        @keyframes wheel1-move{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        #wheel2{
+            position: absolute;
+            top: 300px;
+            left: 770px;
+            animation: wheel2-move 5s linear infinite;
+            z-index: 1;
+        }
+        @keyframes wheel2-move{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        #road{
+            animation: road-move 15s linear;
+            animation-direction: reverse;
+        }
+        @keyframes road-move{
+            0%{
+                transform: translateX(-50%);
+            }
+            100%{
+                transform: translateX(0%);
+            }
+        }
+        #city{
+            animation: city-move 15s linear;
+            animation-direction: reverse;
+        }
+        @keyframes city-move{
+            0%{
+                transform: translateX(-10%);
+            }
+            100%{
+                transform: translateX(0%);
+            }
+        }
+        #car{
+            position: absolute;
+            top: 160px;
+            left: 115px;
+            z-index: 9;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="comp-car">
+            <img id="car" src="car.png" alt="">
+            <img id="wheel1" src="wheel.png" alt="">
+            <img id = "wheel2" src="wheel.png" alt="">
+        </div>
+        <img id="city" src="city.png" alt="">
+        <img id="road" src="road.jpg" alt="">
+    </div>
+</body>
+
+</html>

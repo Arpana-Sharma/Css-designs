@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #big{
+            height: 300px;
+            display: flex;
+        }
+        .a{
+            background-color: rgb(176, 176, 238);
+            border: 1px solid black;
+            width: 31.7%;
+            margin: 10px;
+        }
+        #middle{
+            display: flex;
+            height: 100px;
+        }
+        .b{
+            background-color: rgb(176, 176, 238);
+            border: 1px solid black;
+            width: 24%;
+            margin: 10px;
+        }
+        #last{
+            display: flex;
+            height: 100px;
+        }
+        .c{
+            background-color: rgb(176, 176, 238);
+            border: 1px solid black;
+            width: 19%;
+            margin: 10px;
+        }
+        #big1, #middle1, #last1{
+            height: 31%;
+            display: flex;
+            flex-direction: row;
+        }
+        .a1{
+            background-color: rgb(239, 239, 245);
+            border: 1px solid black;
+            width: 31.7%;
+            margin: 10px;
+        }
+        .b1{
+            background-color: rgb(239, 239, 245);
+            border: 1px solid black;
+            width: 23%;
+            margin: 10px;
+        }
+        .c1{
+            width: 18%;
+            background-color: rgb(239, 239, 245);
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #abox1 p{
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="big">
+        <div class="a" id="abox1">
+            <p>1</p>
+            <div id="big1">
+                <div class="a1" id="a1box1">1</div>
+                <div class="a1" id="a1box2">2</div>
+                <div class="a1" id="a1box3">3</div>
+            </div>
+            <div id="middle1">
+                <div class="b1" id="b1box1">1</div>
+                <div class="b1" id="b1box2">2</div>
+                <div class="b1" id="b1box3">3</div>
+                <div class="b1" id="b1box4">4</div>
+            </div>
+            <div id="last1">
+                <div class="c1" id="c1box1">1</div>
+                <div class="c1" id="c1box2">2</div>
+                <div class="c1" id="c1box3">3</div>
+                <div class="c1" id="c1box4">4</div>
+                <div class="c1" id="c1box5">5</div>
+            </div>
+        </div>
+        <div class="a" id="abox2">2</div>
+        <div class="a" id="abox3">3</div>
+    </div>
+    <div id="middle">
+        <div class="b" id="bbox1">1</div>
+        <div class="b" id="bbox2">2</div>
+        <div class="b" id="bbox3">3</div>
+        <div class="b" id="bbox4">4</div>
+    </div>
+    <div id="last">
+        <div class="c" id="cbox1">1</div>
+        <div class="c" id="cbox2">2</div>
+        <div class="c" id="cbox3">3</div>
+        <div class="c" id="cbox4">4</div>
+        <div class="c" id="cbox5">5</div>
+    </div>
+</body>
+</html>

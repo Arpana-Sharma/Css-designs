@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            border: 3px solid rgb(8, 8, 126);
+            width: 400px;
+            height: 400px;
+        }
+        #y{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            animation-name: play_shape;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes play_shape{
+            0%{
+                background-color: black;
+                border-radius: 100px;
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="y"></div>
+    </div>
+</body>
+</html>

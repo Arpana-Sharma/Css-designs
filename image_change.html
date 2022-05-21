@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper{
+            display: flex;
+        }
+        #container{
+            border: 12px solid black;
+            width: 400px;
+            height: 250px;
+        }
+        #image{
+            position: absolute;
+            display: block;
+            width: 400px;
+            top: 0;
+            left: 0;
+            /* z-index: 2; */
+        }
+        #image2{
+            width: 400px;
+            height: 250px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+            /* z-index: 1; */
+            transition: opacity 2s ease-in-out;
+        }
+        #image2:hover{
+            opacity: 1;
+            /* z-index: 0; */
+        }
+        #image3{
+            display: block;
+            background-color: black;
+            margin: 50px;
+            filter: brightness(100%);
+            transition: filter 1s;
+        }
+        #image3:hover{
+            filter: brightness(50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <img id = "image" src="/travel/images/RAJASTHAN.jpg" alt="">
+            <img id = "image2" src="/travel/images/uttarakhand.jpg" alt="">
+        </div>
+        <div id = "image3">
+            <img src="/resteraunt/kabab.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

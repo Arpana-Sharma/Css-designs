@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #navbar {
+            color: rgb(243, 242, 242);
+            display: flex;
+            align-items: center;
+            animation-name: nav-move;
+            animation-duration: 4s;
+        }
+
+        @keyframes nav-move {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 80px;
+            width: 100%;
+            z-index: 0;
+            opacity: 0.7;
+        }
+
+        #navbar #left {
+            z-index: 2;
+            margin-left: 42px;
+            padding: 25px;
+        }
+
+        #navbar img {
+            top: 30px;
+            position: absolute;
+            right: 0px;
+            width: 30px;
+            height: 30px;
+        }
+
+        #navbar ul {
+            margin-right: 40px;
+            position: absolute;
+            right: 30px;
+            display: flex;
+            list-style: none;
+        }
+
+        #navbar ul li a:hover {
+            color: gray;
+            background-color: rgb(236, 234, 234);
+            border-radius: 30px;
+        }
+
+        #navbar ul li a {
+            margin: 0px 20px;
+            padding: 10px;
+            color: rgb(240, 235, 235);
+            text-decoration: none;
+        }
+        #right img{
+            display: block;
+            position: absolute;
+            top: 22px;
+            right: 10px;
+        }
+        /* Main*/
+        #main::before {
+            background-color: black;
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('snow.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 660px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.89;
+        }
+
+        #main {
+            margin: auto;
+            color: rgb(211, 210, 210);
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main #heading {
+            font-size: 6rem;
+            top: 100px;
+            position: absolute;
+            right: 650px;
+        }
+
+        #main #subheading {
+            top: 275px;
+            position: absolute;
+            right: 350px;
+        }
+
+        #follow {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            animation-name: move-follow;
+            animation-duration: 2s;
+        }
+        .but{
+            display: inline;
+            color: white;
+            border: 2px solid white;
+            border-radius: 30px;
+            cursor: pointer;
+            display: block;
+            font-size: 0.8rem;
+            width: 128px;
+            height: 40px;
+            margin-top: 10px;
+            align-items: center;
+            justify-items: center;
+            background-color: black;
+            opacity: 0.48;
+        }
+        @keyframes move-follow {
+            0% {
+                transform: translateY(280%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+        }
+
+        .headings {
+            position: absolute;
+        }
+
+        #heading1 {
+            animation-name: hm1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            /* animation-name: movex1;
+            animation-duration: 2.4s; */
+        }
+        
+        #heading2 {
+            animation: hm2 10s linear infinite;
+        }
+
+        #heading3 {
+            animation-name: hm3;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        #heading4 {
+            animation-name: hm4;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes hm1{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: visible;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: hidden;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes hm2{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: visible;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: hidden;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes hm3{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: visible;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes hm4{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: hidden;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: visible;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        #but2{
+            position: absolute;
+            bottom: 15px;
+            right: 250px;
+        }
+        #but1{
+            position: absolute;
+            bottom: 15px;
+            right: 387px;
+        }
+        /* @keyframes movex1{
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0%);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div id="left">
+                <p>
+                    MAYRA
+                </p>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">Category</a></li>
+            </ul>
+            <div id="right">
+                <img src="instagram.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div id="main">
+        <div id="h">
+            <div id="heading">
+                <h1 id="heading1" class="headings">MAYR</h1>
+                <h1 id="heading2" class="headings">NEHA</h1>
+                <h1 id="heading3" class="headings">MAYA</h1>
+                <h1 id="heading4" class="headings">ASHI</h1>
+            </div>
+            <p id="subheading">Clothes that assure to heat you up this winter</p>
+        </div>
+        <div id="icons">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        
+        <div id="follow">
+            <button class = "but" id = "but1">2000 Collections</button>
+            <button class = "but" id = "but2">Follow us on</button>
+            <img src="telegram.png" alt="">
+            <img src="instagram.png" alt="">
+            <img src="instagram.png" alt="">
+            <img src="telegram.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

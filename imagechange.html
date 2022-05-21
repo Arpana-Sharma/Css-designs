@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            padding: 70px;
+        }
+        #container::before {
+            background-color: black;
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('dark.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 692px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.89;
+            animation: shrink 8s infinite alternate;
+        }
+        @keyframes shrink{
+            0%{
+                background-size: 100% 100%;;
+            }
+            100%{
+                background-size: 120% 120%;
+            }
+        }
+        #container2 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            padding: 70px;
+        }
+        #container2::before {
+            background-color: black;
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('dark2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 692px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.89;
+            animation: shrink2 8s infinite alternate;
+        }
+        @keyframes shrink2{
+            0%{
+                background-size: 100% 100%;;
+            }
+            100%{
+                background-size: 120% 120%;
+            }
+        }
+        #container3 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            padding: 70px;
+        }
+        #container3::before {
+            background-color: black;
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('dark6.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 692px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.89;
+            animation: shrink3 8s infinite alternate;
+        }
+        @keyframes shrink3{
+            0%{
+                background-size: 100% 100%;;
+            }
+            100%{
+                background-size: 120% 120%;
+            }
+        }
+        #container4{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            padding: 70px;
+        }
+        #container4::before {
+            background-color: black;
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('darkjpg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 692px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.89;
+            animation: shrink4 8s infinite alternate;
+        }
+        @keyframes shrink4{
+            0%{
+                background-size: 100% 100%;;
+            }
+            100%{
+                background-size: 120% 120%;
+            }
+        }
+        #wrapper {
+            color: white;
+            width: 60%;
+            margin-top: auto;
+            margin-bottom: auto;
+            animation-name: move;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        #wrapper span {
+            display: block;
+            background-color: red;
+            width: 130px;
+            height: 1px;
+            position: absolute;
+        }
+        #wrapper h4 {
+            padding-top: 24px;
+        }
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+        #container{
+            animation: slide1 8s linear infinite; 
+        }
+        #container2{
+            animation: slide2 8s linear infinite; 
+        }
+        #container3{
+            animation: slide3 8s linear infinite; 
+        }
+        #container4{
+            animation: slide4 8s linear infinite; 
+        }
+        @keyframes slide1{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: visible;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: hidden;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes slide2{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: visible;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: hidden;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes slide3{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: visible;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: hidden;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        @keyframes slide4{
+            0%{
+                visibility: hidden;
+            }
+            12.5%{
+                visibility: hidden;
+            }
+            25%{
+                visibility: hidden;
+            }
+            37.5%{
+                visibility: hidden;
+            }
+            50%{
+                visibility: hidden;
+            }
+            62.5%{
+                visibility: hidden;
+            }
+            75%{
+                visibility: hidden;
+            }
+            87.5%{
+                visibility: visible;
+            }
+            100%{
+                visibility: hidden;
+            }
+        }
+        #boxes{
+            padding: 30px 0px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box{
+            width: 390px;
+            height: 550px;
+            box-shadow: 2px 2px 20px 6px grey;
+        }
+        .images{
+            display: inline-block;
+            height: 30%;
+            width: 100%;
+        }
+        .box h2{
+            margin: 30px 20px;
+            text-align: center;
+        }
+        .box p{
+            margin: 30px 20px;
+            margin-bottom: 0px;
+        }
+        .read{
+            margin: 2px 21px !important;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <h1>Silence Is Not Enough</h1>
+            <span></span>
+            <h4>The most dangerous animal in this world is silent smiling women.
+                Explicabo ipsum accusantium voluptatum accusamus quas quod eveniet placeat ut voluptate modi,
+                natus sit voluptates nostrum alias hic rem ipsa animi asperiores mollitia laborum veritatis.
+                Magni, animi quo tempore eius obcaecati ullam.
+            </h4>
+        </div>
+    </div>
+    <div id="container2">
+        <div id="wrapper">
+            <h1>Konw Your Passion</h1>
+            <span></span>
+            <h4>Follow your passion till the last breathe of your life.
+                Explicabo ipsum accusantium voluptatum accusamus quas quod eveniet placeat ut voluptate modi,
+                natus sit voluptates nostrum alias hic rem ipsa animi asperiores mollitia laborum veritatis.
+                Magni, animi quo tempore eius obcaecati ullam.
+            </h4>
+        </div>
+    </div>
+    <div id="container3">
+        <div id="wrapper">
+            <h1>Keep Your Dreams Alive</h1>
+            <span></span>
+            <h4>Dreams makes person different from others.
+                Explicabo ipsum accusantium voluptatum accusamus quas quod eveniet placeat ut voluptate modi,
+                natus sit voluptates nostrum alias hic rem ipsa animi asperiores mollitia laborum veritatis.
+                Magni, animi quo tempore eius obcaecati ullam.
+            </h4>
+        </div>
+    </div>
+    <div id="container4">
+        <div id="wrapper">
+            <h1>Bury Your Unnacessary Desires</h1>
+            <span></span>
+            <h4>Unnacessary desires makes person weak.
+                Explicabo ipsum accusantium voluptatum accusamus quas quod eveniet placeat ut voluptate modi,
+                natus sit voluptates nostrum alias hic rem ipsa animi asperiores mollitia laborum veritatis.
+                Magni, animi quo tempore eius obcaecati ullam.
+            </h4>
+        </div>
+    </div>
+    <!-- <div id="boxes">
+        <div class="box" id="box1">
+            <img class = "images" src="/travel/images/jammukashmir.jpg" alt="">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia animi autem, at alias nulla rerum magni earum consequatur fuga est voluptates impedit cum nostrum facere perspiciatis inventore deserunt ea ut sapiente aliquid ipsum! Perferendis optio dolorem omnis nesciunt, odio distinctio doloremque cupiditate dolore consequatur! Distinctio corporis ipsum consectetur, eos deserunt iusto ullam, exercitationem at soluta, eveniet in! Ducimus, assumenda quos.</p>
+            <p class = "read">Read More</p>
+        </div>
+        <div class="box" id="box2">
+            <img class = "images" src="/travel/images/RAJASTHAN.jpg" alt="">
+            <h2>sit amet consectetur.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique facilis ullam totam illum ducimus saepe porro corporis. Ipsam dolorum amet sapiente odio velit eveniet neque ullam omnis, tenetur autem et quae non dolore ea ad molestiae dignissimos distinctio, vero aliquid deleniti laboriosam explicabo? Nihil eos harum, eius facere illum ab quod impedit incidunt iste cum, quisquam quis repellendus odio?</p>
+            <p class = "read">Read More</p>
+        </div>
+        <div class="box" id="box3">
+            <img class = "images" src="/travel/images/uttarakhand.jpg" alt="">
+            <h2>adipisicing elit Dolores.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum cupiditate eveniet veritatis ipsam natus, id quidem dolorum provident! Cum iure deserunt, placeat repellat quas incidunt ratione? Sunt repellendus nesciunt exercitationem, dolores laborum commodi laudantium officia dignissimos voluptates eligendi praesentium dolorum aliquam perspiciatis, nihil id laboriosam. Ipsum explicabo neque voluptatum exercitationem blanditiis, porro quaerat earum, aliquid odit perferendis temporibus obcaecati!</p>
+            <p class = "read">Read More</p>
+        </div>
+    </div> -->
+</body>
+
+</html>
